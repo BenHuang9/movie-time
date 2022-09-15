@@ -1,0 +1,56 @@
+// Header
+header {
+    position: relative;
+    // padding: 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    h1 {
+        margin: em(2) 0 em(6);
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        
+    }
+
+    
+    button {
+        padding-right: 3rem;
+        .searchlogo{
+            width: 30px;
+        }
+    }
+
+   
+    
+    @include mq($tabletPortrait){
+        display: flex;
+        // width: 90%;
+        .logo {
+            padding-top: 15px;
+            // padding-right: 2rem;
+        }
+       
+        h1 {
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    @include mq($desktop){
+        padding-left: 4rem;
+        width: 90%;
+        .logo {
+            padding-top: 15px;
+        }
+        // margin: em(20);
+        h1 {
+            font-size: em(48);
+        }
+    }
+
+}

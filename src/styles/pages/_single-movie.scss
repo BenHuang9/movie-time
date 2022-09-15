@@ -1,0 +1,173 @@
+.single-main{
+    position: relative;
+    padding-bottom:45rem;
+    .background-poster{
+        filter: brightness(0.2);
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        padding-top: 5rem;
+        
+        
+    }
+    .single-movie-info{
+        
+        position: absolute;
+        top: 3rem;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 13rem;
+        
+        
+
+        .movie-title{
+            display: flex;
+            justify-content: space-between;
+            .btn-favourite button{
+                width: 50px;
+            }
+        }
+        
+        .movie-poster img{
+            width: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 50px 0px #6130ff;
+
+
+        }
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            embed{
+                width: 25px;
+                margin-right: 10px;
+                height: 25px; 
+            }
+            .tag{
+                color: whitesmoke;
+                background-color: #2c2c2c;
+                border: solid 2px whitesmoke;
+                border-radius: 10px;
+                padding: 0.1em 0.25em;
+                margin: 0.25rem 0.25em 0 0;
+            }
+        }
+        .moive-allinfo{
+            padding: 3rem 2rem 0 2rem;
+            
+            .popup {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div {
+                    position: relative;
+                    width: 100%;
+                    max-width: 560px;
+                    background-color: whitesmoke;
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color: white;
+                    }
+                }
+            }
+            .user-score{
+                padding: 0;
+                display: flex;
+                justify-content: space-evenly;
+                .star{
+                    display: flex;
+                }
+                
+                .trailer-btn {
+                    align-items: center;
+                    border: 1px solid #cccbcb;
+                    border-radius: 0.375em;
+                    box-shadow: none;
+                    box-sizing: border-box;
+                    color: #ffffff;
+                    cursor: pointer;
+                    display: inline-flex;
+                    font-size: 0.75rem;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    justify-content: center;
+                    line-height: 1.5;
+                    text-align: center;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: top;
+                    white-space: nowrap;
+                }
+            }
+            .popup iframe{
+                width: 100%;
+                height: 300px;
+            }
+            section .stats{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+   
+}
+@media (min-width:$tabletPortrait){
+.single-main{
+    padding-bottom:3rem;
+    .background-poster{
+        height: 800px;
+    }
+    .single-movie-info{
+        position: absolute;
+        top: 7rem;
+        display: flex;
+        // border: 5px solid white;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+        margin-top: 5rem;
+        .btn-favourite button{
+            width: 60px;
+        }
+        .movie-poster img{
+            width: 300px;
+        }
+        .moive-allinfo{
+            width: 70%;
+            
+            .user-score {
+                justify-content: flex-start;
+                li{
+                    padding-right: 2rem;
+                }
+            }
+        }
+
+       
+    }
+}
+}
+
+@media (min-width:$tabletLandscape){
+    .single-main{
+    .single-movie-info{
+        width: 70%;
+    }
+    }
+}

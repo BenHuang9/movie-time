@@ -1,0 +1,41 @@
+// Main Styles
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Sarabun:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Puddles&display=swap');
+/* 
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Sarabun', sans-serif;
+
+*/
+
+// Utilities
+@import './utilities/functions';
+@import './utilities/utility-classes';
+@import './utilities/mixins';
+@import './utilities/variables';
+
+// Resets
+@import './base/reset';
+@import './base/type';
+
+// Components
+@import './component/header';
+@import './component/nav';
+@import './component/main-nav';
+@import './component/btn-main-nav';
+@import './component/movie-card';
+@import './component/movie-slider';
+@import './component/logo';
+@import './component/footer';
+
+//pages
+@import './pages/about';
+@import './pages/single-movie';
+@import './pages/page-not-found';
+@import './pages/fav-page';
+@import './pages/search-page';
+
+
+

@@ -1,0 +1,39 @@
+// Resets
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+  color: white;
+}
+h2{
+  font-size: 1.5rem;
+}
+h3{
+  font-size: 1.3rem;
+}
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+

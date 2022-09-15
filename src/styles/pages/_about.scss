@@ -1,0 +1,13 @@
+.about-page{
+    text-align: center;
+    padding: 1.25em;
+    width: 70%;
+    margin: 5rem auto;
+    border: 3px solid white;
+    box-shadow: 0 0 30px 10px #6130ff;
+    .tmdblogo{
+        width: 150px;
+        display: flex; 
+        margin: 40px auto;
+    }
+}

@@ -1,0 +1,25 @@
+.search-page{
+    padding-top: 5rem;
+    form{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .search-title{
+        text-align: center;
+    }
+    .search-bar{
+        display: block;
+        width: 50%;
+        height: 40px;
+        border-radius: 15px;
+        padding: 12px 20px;
+    }
+    .search-list{
+        padding-top: 2rem;
+
+        p{
+        text-align: center;
+        }
+    }
+}

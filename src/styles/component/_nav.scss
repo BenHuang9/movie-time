@@ -1,0 +1,33 @@
+.nav-sort {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    a {
+        font-weight:300;
+        &.active {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+    }
+}
+.nav-sort{
+    ul{
+
+        display: flex;
+        font-size: 1rem;
+        padding: 0;
+        justify-content: space-evenly;
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 82px rgb(59, 255, 239),
+        0 0 92px #3bffef;
+        @media(min-width:$phoneLandscape){
+        font-size: 1.3rem;
+        }
+        @media(min-width:$tabletLandscape){
+            font-size: 1.7rem;
+        }
+    }
+}
